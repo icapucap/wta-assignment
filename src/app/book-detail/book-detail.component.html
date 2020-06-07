@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>{{ emp.emp_name }}</h1>
+  <dl class="list">
+    <dt>Employee Id</dt>
+    <dd>{{ emp.emp_id }}</dd>
+    <dt>Career Goal</dt>
+    <dd>{{ emp.goal }}</dd>
+    <dt>Duration in Company</dt>
+    <dd>{{ emp.duration_in_comp }}</dd>
+    <dt>Aspiring Position</dt>
+    <dd>{{ emp.position }}</dd>
+    <dt>Relocation</dt>
+    <dd>{{ emp.relocation }}</dd>
+    <dt>Update Date</dt>
+    <dd>{{ emp.updated_date | date:'short' }}</dd>
+  </dl>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <a [routerLink]="['/book-edit', emp._id]" class="btn btn-success">EDIT</a>
+    <button class="btn btn-danger" type="button" (click)="deleteEmp(emp._id)">DELETE</button>
+  </div>
+</div>
