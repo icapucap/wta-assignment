@@ -1,4 +1,4 @@
-# MEAN Stack (Angular 5) CRUD Web Application 
+# CRUD Web Application using Angular and MongoDB
 Employee Appraisal Form
 
 
