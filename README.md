@@ -5,6 +5,7 @@ Employee Appraisal Form
 To run locally:
 
 * Clone this repo
+* Start mongo service
 * Run `npm install`
 * Run `npm start`
 
